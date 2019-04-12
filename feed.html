@@ -68,6 +68,7 @@
   </style>
   <script type="text/javascript" >
     $(function(){
+        $('[data-toggle="tooltip"]').tooltip()
 //     $('[data-toggle="popover"]').popover()
 //         function expandTextarea(id) {
         $('.select-complaint').select2({width: "resolve"});
@@ -132,9 +133,13 @@
           <span class="badge badge-warning">3</span>
         </a>
         <a class="dropdown-item" href="#">Добавить инцидент</a>
-        <a class="dropdown-item" href="#">Поиск</a>
+        <a class="dropdown-item" href="#" data-toggle="tooltip" data-placement="right" 
+          title="Архив событий, экспорт в файл">Поиск</a>
         <a class="dropdown-item" href="#">Избранное</a>
-        <a class="dropdown-item" href="#">Управление 
+        <a class="dropdown-item" href="#" data-toggle="tooltip" data-placement="right" 
+          title="Подать/отозвать заявку на вступление в координирующую организацию">Организации</a>
+        <a class="dropdown-item" href="#" data-toggle="tooltip" data-placement="right" 
+          title="Добавить/удалить оператора. Выбрать УИКи отображаемые в ленте.">Управление 
         <i style="color:gray;">(видно только админам организации)</i></a>
         
         <div class="dropdown-divider"></div>
